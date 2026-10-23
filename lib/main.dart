@@ -27,11 +27,8 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              SizedBox(height: 20),
-              CircleAvatar(
-                backgroundColor: Colors.black12,
-                radius: 100,
-                child: ClipOval(
+              const SizedBox(height: 20),
+                ClipOval(
                   child: Image.asset(
                     'assets/images/profile.jpeg',
                     width: 200,
@@ -39,7 +36,99 @@ class MyApp extends StatelessWidget {
                     fit: BoxFit.cover,
                   )
                 ),
+              const SizedBox(height: 20),
+              const Text(
+                "Ayesha",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
               ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(88.888),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.school, size: 17, color: Colors.yellow),
+                    SizedBox(width: 4),
+                    Text(
+                      "Student",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 40),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.brown
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/profile.jpeg',
+                            width: 50,
+                            height: 50,
+                          ),
+                          const SizedBox(height: 30),
+                          const Text("100%"),
+                          const SizedBox(height: 30),
+                          const Text("Music"),
+                        ],
+                      ), 
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.brown,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/profile.jpeg',
+                            width: 50,
+                            height: 50,
+                          ),
+                          const SizedBox(height: 30),
+                          const Text("100%"),
+                          const SizedBox(height: 30),
+                          const Text("Food"),
+                        ],
+                      ), 
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.brown,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/profile.jpeg',
+                            width: 50,
+                            height: 50,
+                          ),
+                          const SizedBox(height: 30),
+                          const Text("100%"),
+                          const SizedBox(height: 30),
+                          const Text("Travel"),
+                        ],
+                      ), 
+                    ),
+                   ]))
             ],
           ),
         ),

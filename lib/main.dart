@@ -69,17 +69,20 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: Colors.brown
+                      width: 110,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.teal.shade100,
+                        borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
-                            'assets/images/profile.jpeg',
-                            width: 50,
-                            height: 50,
+                            'assets/images/image.png',
+                            width: 90,
+                            height: 90,
+                            fit: BoxFit.cover,
                           ),
                           const SizedBox(height: 30),
                           const Text("100%"),
@@ -89,17 +92,20 @@ class MyApp extends StatelessWidget {
                       ), 
                     ),
                     Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: Colors.brown,
+                      width: 110,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.teal.shade100,
+                        borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
-                            'assets/images/profile.jpeg',
-                            width: 50,
-                            height: 50,
+                            'assets/images/food.jpg',
+                            width: 90,
+                            height: 90,
+                            fit: BoxFit.cover,
                           ),
                           const SizedBox(height: 30),
                           const Text("100%"),
@@ -109,17 +115,20 @@ class MyApp extends StatelessWidget {
                       ), 
                     ),
                     Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: Colors.brown,
+                      width: 110,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.teal.shade100,
+                        borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
-                            'assets/images/profile.jpeg',
-                            width: 50,
-                            height: 50,
+                            'assets/images/travel.jpg',
+                            width: 90,
+                            height: 90,
+                            fit: BoxFit.cover,
                           ),
                           const SizedBox(height: 30),
                           const Text("100%"),
@@ -128,7 +137,9 @@ class MyApp extends StatelessWidget {
                         ],
                       ), 
                     ),
-                   ]))
+                  ]
+                )
+              )
             ],
           ),
         ),
